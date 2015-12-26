@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Counter</string>
+    <string name="buttonHelloText">Поздороваться</string>
+    <string name="crowsCounterButtonText">Считаем ворон</string>
+    <string name="catsButtonText">Считаем Котов</string>
+    <string name="crowsAndCatsCountersButtonText">Общий результат</string>
+    <string name="resetCountersButtonText">Сброс</string>
+    <string name="exitButtonText">Выход</string>
+    <string name="about_text">
+        У лукоморья дуб зелёный;\n
+    Златая цепь на дубе том:\n
+    И днём и ночью <b>кот учёный</b>\n
+    Всё ходит по цепи кругом;\n
+    Идёт <b>направо</b> - песнь заводит,\n
+    <b>Налево</b> - сказку говорит.
+    </string>
+    <string name="maidByDenis">Made by Denis Oliynyk =P</string>
+</resources>
