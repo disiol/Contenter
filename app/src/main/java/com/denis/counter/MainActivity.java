@@ -1,5 +1,6 @@
 package com.denis.counter;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,8 +16,12 @@ public class MainActivity extends AppCompatActivity {
     private Button mResetCountersButton;
     private Button mExitButton;
 
+    private static final String KEY_COUNT_CROWS = "COUNT_CROWS";
+    private static final String KEY_COUNT_CATS = "COUNT_CATS";
+
     private int mCountCrows = 0;
-    private int mCountCats = 0;
+    private int mCountCats = 0; //TODO хохранять переменные при повороте
+
 
 
     @Override
@@ -31,6 +36,13 @@ public class MainActivity extends AppCompatActivity {
         mInfoTextView = (TextView) findViewById(R.id.InfoTextView);
 
 
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(KEY_COUNT_CROWS,mCountCrows);
+        outState.putInt(KEY_COUNT_CATS,mCountCats);
     }
 
     public void onClickButtonHello(View view) {
