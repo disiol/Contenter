@@ -3,106 +3,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.denis.counter.MainActivity">
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/buttonHelloText"
         android:id="@+id/buttonHello"
-        android:onClick="onClickButtonHello"
-        android:clickable="false"
-        android:layout_gravity="center"
-        android:layout_marginTop="63dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/InfoTextView"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/crowsCounterButtonText"
-        android:id="@+id/crowsCounterButton"
-        android:onClick="onClickCrowsCounterButton"
-        android:clickable="false"
-        android:layout_gravity="left"
-        android:layout_alignTop="@+id/buttonHello"
-        android:layout_toRightOf="@+id/buttonHello"
-        android:layout_toEndOf="@+id/buttonHello" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/catsButtonText"
-        android:id="@+id/counterOfCatsButton"
-        android:onClick="onClickCounterOfCatsButton"
-        android:clickable="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_gravity="center"
-        android:layout_alignTop="@+id/crowsCounterButton"
-        android:layout_toRightOf="@+id/crowsCounterButton"
-        android:layout_toEndOf="@+id/crowsCounterButton" />
+        android:onClick="onClickButtonHello"
+        android:text="@string/buttonHelloText" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/crowsCounterButton"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/crowsAndCatsCountersButtonText"
-        android:id="@+id/crowsAndCatsCountersButton"
-        android:onClick="onClickCrowsAndCatsCountersButton"
-        android:clickable="false"
-        android:layout_below="@+id/buttonHello"
+        android:layout_above="@+id/crowsAndCatsCountersButton"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="254dp"
+        android:layout_marginLeft="254dp"
+        android:layout_marginEnd="228dp"
+        android:layout_marginRight="228dp"
+        android:layout_marginBottom="-165dp"
+        android:onClick="onClickCrowsCounterButton"
+        android:text="@string/crowsCounterButtonText" />
 
     <Button
+        android:id="@+id/counterOfCatsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/resetCountersButtonText"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="-31dp"
+        android:layout_marginBottom="19dp"
+        android:onClick="onClickCounterOfCatsButton"
+        android:text="@string/catsButtonText" />
+
+    <Button
+        android:id="@+id/crowsAndCatsCountersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCrowsAndCatsCountersButton"
+        android:text="@string/crowsAndCatsCountersButtonText" />
+
+    <Button
         android:id="@+id/resetCountersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:onClick="onClickResetCountersButton"
-        android:clickable="false"
-        android:layout_alignTop="@+id/crowsAndCatsCountersButton"
-        android:layout_toRightOf="@+id/crowsAndCatsCountersButton"
-        android:layout_toLeftOf="@+id/counterOfCatsButton"
-        android:layout_toStartOf="@+id/counterOfCatsButton" />
+        android:text="@string/resetCountersButtonText" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/exitButtonText"
         android:id="@+id/exitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/crowsCounterButton"
+        android:clickable="false"
         android:onClick="onClickExitButton"
-        android:clickable="false"
-        android:layout_alignTop="@+id/resetCountersButton"
-        android:layout_alignRight="@+id/counterOfCatsButton"
-        android:layout_alignEnd="@+id/counterOfCatsButton"
-        android:layout_toEndOf="@+id/crowsCounterButton"
-        android:layout_toRightOf="@+id/crowsCounterButton" />
+        android:text="@string/exitButtonText" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/InfoTextView"
-        android:clickable="false"
-        android:layout_alignRight="@+id/buttonHello"
-        android:layout_alignEnd="@+id/buttonHello"
-        android:layout_alignLeft="@+id/crowsAndCatsCountersButton"
-        android:layout_alignStart="@+id/crowsAndCatsCountersButton" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:clickable="false"
-        android:text="@string/maidByDenis"
-        android:layout_below="@+id/crowsAndCatsCountersButton"
-        android:layout_toLeftOf="@+id/counterOfCatsButton"
-        android:layout_toStartOf="@+id/counterOfCatsButton"
-        android:layout_marginRight="27dp"
-        android:layout_marginEnd="27dp"
-        android:layout_gravity="center" />
+        android:text="25545" />
+
+
 
 </RelativeLayout>
